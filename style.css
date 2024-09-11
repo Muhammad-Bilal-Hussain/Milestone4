@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    width: 100vw;
+    /* height: 100vh; */
+    /* background: #000000; */
+    background-image: url(images/cvpic.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    /* place-items: center; */
+    /* overflow: hidden; */
+    font-family: poppins;
+}
+input {
+    caret-color: red;
+}
+.container {
+    position: relative;
+    width: 750px;
+    height: auto;
+    border-radius: 20px;
+    padding: 40px;
+    box-sizing: border-box;
+    background: #e1e4e6;
+    box-shadow: 14px 14px 20px #848485, -14px -14px 20px rgb(83, 79, 79);
+    /* background: rgba(479, 421, 255, 0.8); */
+}
+fieldset{
+    border: 2px solid #1DA1F2;
+}
+.inputs {
+    text-align: left;
+    margin-top: 30px;
+}
+label, input, button {
+    display: block; 
+    width: 100%;
+    padding: 5px;
+    border-radius: 5%;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+textarea{
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+label {
+    margin-bottom: 4px;
+}
+
+input::placeholder {
+    color: gray;
+  }
+    
+  button {
+    color: white;
+    margin-top: 20px;
+    background: #1DA1F2;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 900;
+    transition: 0.5s;
+  }
+  
+  button:hover {
+    box-shadow: 7px 7px 20px #848485, -0px -0px 20px rgb(83, 79, 79);
+  }  
+.resumeoutput{
+    margin: 1%;
+    width: 80%;
+    height: auto;
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #ecf0f3;
+    box-shadow: 14px 14px 20px #848485, -14px -14px 20px rgb(83, 79, 79);
+    text-align: justify;
+    background-color: rgba(479, 421, 255, 0.8);
+}
+.resumeoutput h2{
+ color: black;
+}
+#resumeContent{
+    max-width: 100%; /* Container ke width ke hisaab se text box ki maximum width set kare */
+    width: 100%; /* Full width le lega apne parent container ki */
+    box-sizing: border-box; /* Padding aur border ko width mein include kare */
+    overflow: hidden; /* Agar content bahar jaaye, toh usse chhupa de */
+    text-align: center;
+}
+/* ruseme jo generate hoga uski heading  */
+.resumeheading{
+background-color: black;
+color: white;
+border-radius: 20px;
+text-align: center;
+}
