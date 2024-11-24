@@ -3,18 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
-    <title>Resume Output</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Output Resume | Milestone_4</title>
+    <link rel="stylesheet" href="resumeStyle.css">
 </head>
 <body>
-    <div class="resumeoutput">
-        <h1 style="text-align: center;">Your Resume Updated</h1>
-        <div id="resumeContent"></div>
-        <!-- Edit and Download buttons  -->
-        <button id="editButton">Edit</button>
-        <button id="clearButton">Back to new Resume</button>
+    <div class="resume-container">
+        <div class="items1">
+            <div class="imgdiv">
+                <img id="displayImage" alt="profile image"/>            
+            </div>
+            <section class="left-section">
+            <h2>About</h2>
+            <p id="displayAbout"></p>
+            <h2>Contact Info</h2>
+            <p id="displayContact"></p>
+            <p  id="displayEmail"></p>
+            <h2>Skills</h2>
+            <ul id="displaySkillsContainer"></ul>
+            <h2>Language</h2>
+            <ul id="displayLanguageContainer"></ul>
+        </section>
     </div>
-    <script src="resumeScript.js"></script>
+        <div class="items2">
+            <header>
+            <h1 id="displayName"></h1>
+        </header></div>
+        
+        <div class="items3">
+            <section class="right-section">
+            <h2>Education</h2>
+            <p id="displayEducation"></p>
+
+            <h2>Experience</h2>
+            <p id="displayExperience"></p>
+        </section>
+    </div>
+        <footer class="items4">
+            <span>Thank you for reviewing my resume!</span>
+            <br>
+            <div class="editbutton">
+                <button id="editButton">Edit</button>
+                <button id="clearButton">Back to new Resume</button>
+            </div>
+        </footer>
+    </div>
 </body>
+<script src="resumescript.js"></script>
 </html>
