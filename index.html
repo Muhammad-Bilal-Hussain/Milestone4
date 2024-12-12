@@ -8,77 +8,77 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <form action="">
-            <h1>RESUME BUILDER</h1>
+        <div class="container">
+            <form action="">
+                <h1>RESUME BUILDER</h1>
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <p for="profileImage">Upload Profile Image</p>   
+                    <input type="file" id="imageInput" accept="image/*">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Your Name" >
+                    <label for="contact">Contact</label>
+                    <input type="text" id="contact" placeholder="Your Contact" >
+                    <label for="email">Email</label>
+                    <input type="text" id="email" placeholder="Your Email" >
+                </fieldset>
+                <fieldset>
+                    <legend>About</legend>
+                    <label for="about">About</label>
+                    <textarea id="about" rows="4" placeholder="Write some About You" ></textarea>
+                </fieldset>
+                <fieldset>
+                    <legend>Education</legend>
+                    <div id="educationFields">
+                        <label for="college">College Name</label>
+                        <input type="text" id="college" placeholder="College Name">
+                        
+                        <label for="year">Year</label>
+                        <input type="text" id="year" placeholder="Year">
+                        
+                        <label for="education">Subject</label>
+                        <input type="text" id="education" placeholder="Your Subject">
+                        <hr>
+                    </div>
+                    <!-- <ul id="newEducation"></ul> -->
+                    <button type="button" id="addMoreEducation">Add More Education</button>
+                </fieldset>
+            <!-- Experience -->
             <fieldset>
-                <legend>Personal Information</legend>
-                <p for="profileImage">Upload Profile Image</p>   
-                <input type="file" id="imageInput" accept="image/*">
-                <label for="name">Name</label>
-                <input type="text" id="name" placeholder="Your Name" >
-                <label for="contact">Contact</label>
-                <input type="text" id="contact" placeholder="Your Contact" >
-                <label for="email">Email</label>
-                <input type="text" id="email" placeholder="Your Email" >
-            </fieldset>
-            <fieldset>
-                <legend>About</legend>
-                <label for="about">About</label>
-                <textarea id="about" rows="4" placeholder="Write some About You" ></textarea>
-            </fieldset>
-            <fieldset>
-                <legend>Education</legend>
-                <div id="educationFields">
-                    <label for="college">College Name</label>
-                    <input type="text" id="college" placeholder="College Name">
+                <legend>Experience</legend>
+                <div id="experienceFields">
+                    <label for="college">Company Name</label>
+                    <input type="text" id="company" placeholder="Company Name">
                     
                     <label for="year">Year</label>
-                    <input type="text" id="year" placeholder="Year">
+                    <input type="text" id="exYear" placeholder="Year">
                     
-                    <label for="education">Subject</label>
-                    <input type="text" id="education" placeholder="Your Subject">
+                    <label for="education">Discription</label>
+                    <input type="text" id="discription" placeholder="Job Discription">
                     <hr>
                 </div>
-                <!-- <ul id="newEducation"></ul> -->
-                <button type="button" id="addMoreEducation">Add More Education</button>
-            </fieldset>
-           <!-- Experience -->
-           <fieldset>
-               <legend>Experience</legend>
-               <div id="experienceFields">
-                <label for="college">Company Name</label>
-                <input type="text" id="company" placeholder="Company Name">
-                
-                <label for="year">Year</label>
-                <input type="text" id="exYear" placeholder="Year">
-                
-                <label for="education">Discription</label>
-                <input type="text" id="discription" placeholder="Job Discription">
-                <hr>
-            </div>
-               <button type="button" id="addMoreExperience">Add More Experience</button>
-           </fieldset>           
-           <!-- skills   -->
-            <fieldset>
-                <legend>Skills</legend>
-                <div id="skillsFields">
-                    <label for="skills">Your Skills</label>
-                    <input type="text" id="skills">
-                </div>
-                <button type="button" id="addMoreSkills">Add More Skills</button>
-            </fieldset>
-            <fieldset>
-                <legend>Language</legend>
-                <div id="languageFields">
-                    <label for="language">Your Language</label>
-                    <input type="text" id="language">
-                </div>
-                <button type="button" id="addMoreLanguage">Add More Language</button>
-            </fieldset>
-            <button type="submit">Generate Resume</button>
-        </form>
-</div>
+                <button type="button" id="addMoreExperience">Add More Experience</button>
+            </fieldset>           
+            <!-- skills   -->
+                <fieldset>
+                    <legend>Skills</legend>
+                    <div id="skillsFields">
+                        <label for="skills">Your Skills</label>
+                        <input type="text" id="skills">
+                    </div>
+                    <button type="button" id="addMoreSkills">Add More Skills</button>
+                </fieldset>
+                <fieldset>
+                    <legend>Language</legend>
+                    <div id="languageFields">
+                        <label for="language">Your Language</label>
+                        <input type="text" id="language">
+                    </div>
+                    <button type="button" id="addMoreLanguage">Add More Language</button>
+                </fieldset>
+                <button type="submit">Generate Resume</button>
+            </form>
+    </div>
 <br>
 <br>
 <script src="indexscript.js"></script>

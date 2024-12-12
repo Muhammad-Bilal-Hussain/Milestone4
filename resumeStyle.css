@@ -1,11 +1,18 @@
 /* General styles for responsiveness */
 .resume-container {
+    width: 100vh;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 10px;
     grid-auto-rows: minmax(100px, auto);
 }
-
+.Container{
+    display: flex;
+    justify-content: center;
+    padding: 10px ;
+    background-color: #e1e4e6;
+    border: 2px solid Red;
+}
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .items1 {
@@ -64,7 +71,7 @@
     }
 
     .left-section, .right-section {
-        font-size: 14px;
+        font-size: 11px !important;
     }
 
     img {
@@ -106,6 +113,9 @@ img {
     width: 230px;
     height: 250px;
     border-radius: 50%;
+}
+#displayContact, #displayAbout, #displayEmail{
+    margin-left: 10px;
 }
 
 .left-section {

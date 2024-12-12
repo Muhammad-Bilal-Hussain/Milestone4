@@ -54,7 +54,7 @@ const skillContainer = getElementById<HTMLUListElement>(
 const skills = resumeData.skills.split("\n").forEach((skl: string) => {
   const skillElement = document.createElement("li");
   skillElement.innerHTML = skl.trim();
-  skillElement.style.marginLeft = "5px";
+  skillElement.style.marginLeft = "10px";
   // skillElement.outerText = skl.trim();
   skillContainer.appendChild(skillElement);
 });
@@ -66,7 +66,7 @@ const languageContainer = getElementById<HTMLUListElement>(
 // Get non-empty skills, then add them with <hr> only between entries
 const language = resumeData.language.split("\n").forEach((lan: string) => {
   const languageElement = document.createElement("li");
-  languageElement.style.marginLeft = "5px";
+  languageElement.style.marginLeft = "10px";
   languageElement.innerHTML = lan.trim();
   languageContainer.appendChild(languageElement);
 });
